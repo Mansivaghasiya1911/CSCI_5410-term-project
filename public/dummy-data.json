@@ -1,0 +1,25 @@
+{
+  "action": "currentQuestion",
+  "data": {
+    "question": {
+      "answers": ["Paris", "London", "Berlin", "Madrid"],
+      "question": "What is the capital of England?",
+      "explanation": "London is the capital of England",
+      "correctAnswer": 1,
+      "hint": "It's London"
+    },
+    "score": [
+      {
+        "score": 750,
+        "user_id": "mohit@gmail.com",
+        "team_id": "1",
+        "id": "gukgeuy8c76drlpgvwieg",
+        "game_id": "1"
+      }
+    ],
+    "questionNumber": 21,
+    "remainingTime": 19502,
+    "startTime": 1690429378898,
+    "game_id": "1"
+  }
+}

@@ -1,0 +1,108 @@
+/* .center-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%, -50%);
+  background-color: white;
+  border-radius: 12px;
+  height: 300px;
+  width: 700px;
+  margin-top: 15%;
+} */
+
+.newClass {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 8px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.team-leader p {
+  margin: 20px;
+  font-weight: bold;
+}
+
+.team-members-list .member-header {
+  font-weight: bold;
+}
+
+.team-members-list p {
+  margin: 20px;
+}
+
+.team-members-list p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.name-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.team-info {
+  display: flex;
+  align-items: center;
+}
+
+.buttons {
+  margin-left: 20px;
+}
+
+.buttons > * {
+  margin-left: 20px;
+}
+
+.column-container {
+  display: flex;
+  justify-content: center;
+}
+
+.columns {
+  flex: 1;
+  margin: 40px 35px;
+  position: relative;
+}
+
+.columns:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -17.5px;
+  width: 1px;
+  background-color: #ccc;
+}
+
+.columns .card-container {
+  margin-bottom: 20px;
+}
+
+.heading-wrapper {
+  margin-bottom: 20px;
+}
+
+.create-team {
+  width: 40%;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}

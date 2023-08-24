@@ -1,0 +1,40 @@
+variables:
+  IMAGE_NAME: "gcr.io/serverless-5410-388502/sdp25"
+  SERVICE_NAME: "sdp25-frontend"
+  PREFERRED_REGION: "northamerica-northeast1"
+
+image: node:latest
+
+stages:
+  - build
+cache:
+  paths:
+    - node_modules/
+
+# build:
+#   stage: build
+#   image: google/cloud-sdk:latest
+#   script:
+#     - systemctl start docker
+#     - docker build -t ${IMAGE_NAME}  .
+#     - docker push ${IMAGE_NAME}
+
+# deploy:
+#   stage: deploy
+#   image: google/cloud-sdk:latest
+#   script:
+#     - gcloud run deploy ${SERVICE_NAME} \
+#       --image ${IMAGE_NAME} \
+#       --platform managed \
+#       --region ${PREFERRED_REGION} \
+#       --allow-unauthenticated
+
+build-deploy-netlify-job:
+  stage: build
+  script:
+    - npm install
+    - npm run build
+    - npm install -g netlify-cli
+    - netlify deploy --prod --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID --dir build/
+  only:
+    - master

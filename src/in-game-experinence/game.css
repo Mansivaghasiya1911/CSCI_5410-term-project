@@ -1,0 +1,29 @@
+.question {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.card:hover{
+    background-color: #e6e6e6;
+}
+
+.send-btn{
+  width: 120px;
+}
+
+.input-send{
+  display: flex;
+}
+
+.messages{
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.card.selected{
+  background-color: #c2cdd4;
+}
